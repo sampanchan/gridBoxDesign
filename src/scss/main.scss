@@ -51,13 +51,17 @@ body {
 
 	@include mixins.bp-medium{
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-		grid-template-rows: repeat(auto-fill, minmax(150px,1fr));
+		// grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		// grid-template-rows: repeat(auto-fill, minmax(150px,1fr));
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 3;
 		column-gap: 30px;
 		row-gap: 10px;
 		background-color:#19202D ;
 	}
 	@include mixins.bp-large{
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 2;
 		background:#F7ECF8;
 		margin:3rem;
 	}
@@ -126,24 +130,30 @@ body {
 		.blog-one{
 			@include mixins.bp-medium{
 				background: white;
-				grid-column: 1/3;
+				grid-column: 1/6;
 			}
 			.grid-box-persona{
+				margin-left: 18rem;
 				@include mixins.bp-medium{
+					margin-left: 19rem;
+				}
+				@include mixins.bp-large{
 					margin-left: 19rem;
 				}
 			}
 			@include mixins.bp-large{
 				background:#F7ECF8;
+				grid-column: 1/5;
+				// margin-left: 13rem;
 			}
 			
 		}
 		.blog-two{
 			@include mixins.bp-medium{
-				grid-column: 3/6;
+				grid-area: 1/col4-start/last-line/6;
 			}
 			@include mixins.bp-large{
-				grid-column: 3/6;
+				grid-column: 5/10;
 			}
 			background:#19202D;
 			.header{
@@ -164,16 +174,21 @@ body {
 		.blog-three{
 			@include mixins.bp-medium{
 				background: white;
-				grid-column: 5 / 3;
+				grid-column: 9/1;
 			}
 			.grid-box-persona{
+				margin-left: 16rem;
 				@include mixins.bp-medium{
+					margin-left: 18rem;
+				}
+				@include mixins.bp-large{
 					margin-left: 18rem;
 				}
 			}
 			@include mixins.bp-large{
 				background:#F7ECF8;
-				grid-column: 6/4;
+				grid-column: 10/6;
+    			grid-row: 2;
 			}
 		}
 		.blog-four{
@@ -183,14 +198,14 @@ body {
 			background-size: 200px;
 			background-position: right 50px top 0px;
 			@include mixins.bp-medium{
-				grid-column: 3/-5;
+				grid-column: 1/-4;
     			grid-row: 2;
 				// grid-column-start: 1;
 				// grid-column-end: 3;
 				// grid-row: 2/3;
 			}
 			@include mixins.bp-large{
-				grid-column: 4/-7;
+				grid-column: 1/6;
 			}
 			.header{
 				color: white;
@@ -209,7 +224,7 @@ body {
 			}
 			@include mixins.bp-medium{
 				background: #19202D;
-				grid-column: 1/6;
+				grid-column: 1/10;
 				.header{
 					color: white;
 				}
@@ -218,7 +233,7 @@ body {
 				}
 			}
 			@include mixins.bp-large{
-				grid-area: 1 / col4-start / last-line / 6;
+				grid-area: 1/col4-start/last-line/10;
 			}
 		}
 		.blog-six{
