@@ -70,7 +70,7 @@ body {
 		margin: 0 auto;
 		@include mixins.bp-medium{
 			border-radius: 20px;
-			margin-top: 10px;
+			// margin-top: 10px;
 			justify-content: center;	
 			
 		}
@@ -97,7 +97,7 @@ body {
 		
 		.grid-box-persona{
 			display: flex;
-			margin-left: 11rem;
+			// margin-left: 11rem;
 
 			.flex-grid{
 				padding: 10px;
@@ -128,22 +128,24 @@ body {
 			
 		}
 		.blog-one{
+			;
 			@include mixins.bp-medium{
 				background: white;
 				grid-column: 1/6;
 			}
 			.grid-box-persona{
-				margin-left: 18rem;
+				justify-content: flex-end;
+				// margin-left: 18rem;
 				@include mixins.bp-medium{
-					margin-left: 19rem;
+					// margin-left: 19rem;
 				}
 				@include mixins.bp-large{
-					margin-left: 19rem;
+					// margin-left: 19rem;
 				}
 			}
 			@include mixins.bp-large{
 				background:#F7ECF8;
-				grid-column: 1/5;
+				grid-column: 1/4;
 				// margin-left: 13rem;
 			}
 			
@@ -153,7 +155,8 @@ body {
 				grid-area: 1/col4-start/last-line/6;
 			}
 			@include mixins.bp-large{
-				grid-column: 5/10;
+				grid-column: 4/10;
+    			grid-row: 1;
 			}
 			background:#19202D;
 			.header{
@@ -177,17 +180,18 @@ body {
 				grid-column: 9/1;
 			}
 			.grid-box-persona{
-				margin-left: 16rem;
+				justify-content: flex-end;
+				// margin-left: 16rem;
 				@include mixins.bp-medium{
-					margin-left: 18rem;
+					// margin-left: 18rem;
 				}
 				@include mixins.bp-large{
-					margin-left: 18rem;
+					// margin-left: 18rem;
 				}
 			}
 			@include mixins.bp-large{
 				background:#F7ECF8;
-				grid-column: 10/6;
+				grid-column: 10/7;
     			grid-row: 2;
 			}
 		}
@@ -205,7 +209,7 @@ body {
 				// grid-row: 2/3;
 			}
 			@include mixins.bp-large{
-				grid-column: 1/6;
+				grid-column: 1/7;
 			}
 			.header{
 				color: white;
@@ -215,6 +219,13 @@ body {
 			}
 			img{
 				border: 2px solid #A31862;
+			}
+			.grid-box-persona{
+				.flex-grid{
+					.name{
+						color: white;
+					}
+				}
 			}
 		}
 		.blog-five{

@@ -294,7 +294,6 @@ background: variables.$primary-color;
 @media screen and (min-width: 768px) {
   .grid-container .blog {
     border-radius: 20px;
-    margin-top: 10px;
     justify-content: center;
   }
 }
@@ -316,7 +315,6 @@ background: variables.$primary-color;
 }
 .grid-container .blog .grid-box-persona {
   display: flex;
-  margin-left: 11rem;
 }
 .grid-container .blog .grid-box-persona .flex-grid {
   padding: 10px;
@@ -350,24 +348,14 @@ background: variables.$primary-color;
   }
 }
 .grid-container .blog-one .grid-box-persona {
-  margin-left: 18rem;
-}
-@media screen and (min-width: 768px) {
-  .grid-container .blog-one .grid-box-persona {
-    margin-left: 19rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .grid-container .blog-one .grid-box-persona {
-    margin-left: 19rem;
-  }
+  justify-content: flex-end;
 }
 @media screen and (min-width: 992px) {
   .grid-container .blog-one {
     background: #F7ECF8;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/5;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
   }
 }
 .grid-container .blog-two {
@@ -380,9 +368,11 @@ background: variables.$primary-color;
 }
 @media screen and (min-width: 992px) {
   .grid-container .blog-two {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 5;
-    grid-column: 5/10;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4/10;
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
 }
 .grid-container .blog-two .header {
@@ -406,24 +396,14 @@ background: variables.$primary-color;
   }
 }
 .grid-container .blog-three .grid-box-persona {
-  margin-left: 16rem;
-}
-@media screen and (min-width: 768px) {
-  .grid-container .blog-three .grid-box-persona {
-    margin-left: 18rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .grid-container .blog-three .grid-box-persona {
-    margin-left: 18rem;
-  }
+  justify-content: flex-end;
 }
 @media screen and (min-width: 992px) {
   .grid-container .blog-three {
     background: #F7ECF8;
     -ms-grid-column: 10;
-    -ms-grid-column-span: -4;
-    grid-column: 10/6;
+    -ms-grid-column-span: -3;
+    grid-column: 10/7;
     -ms-grid-row: 2;
     grid-row: 2;
   }
@@ -445,8 +425,8 @@ background: variables.$primary-color;
 @media screen and (min-width: 992px) {
   .grid-container .blog-four {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1/6;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
   }
 }
 .grid-container .blog-four .header {
@@ -457,6 +437,9 @@ background: variables.$primary-color;
 }
 .grid-container .blog-four img {
   border: 2px solid #A31862;
+}
+.grid-container .blog-four .grid-box-persona .flex-grid .name {
+  color: white;
 }
 .grid-container .blog-five {
   background: white;
