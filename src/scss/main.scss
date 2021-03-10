@@ -42,6 +42,7 @@ body {
 /* 2. Content ================================= */
 
 .grid-container{
+	overflow: hidden;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: auto;
@@ -177,7 +178,7 @@ body {
 		.blog-three{
 			@include mixins.bp-medium{
 				background: white;
-				grid-column: 9/1;
+				grid-column: 10/1;
 			}
 			.grid-box-persona{
 				justify-content: flex-end;
@@ -244,7 +245,15 @@ body {
 				}
 			}
 			@include mixins.bp-large{
+				background: white;
 				grid-area: 1/col4-start/last-line/10;
+				background-image: url(/src/img/grey-quote.svg);
+				background-repeat: no-repeat;
+				background-size: 200px;
+				background-position: right -37px top 35px;
+				.header{
+					color: #48556A;
+				}
 			}
 		}
 		.blog-six{

@@ -169,6 +169,7 @@ background: variables.$primary-color;
 
 /* 2. Content ================================= */
 .grid-container {
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
@@ -390,9 +391,9 @@ background: variables.$primary-color;
 @media screen and (min-width: 768px) {
   .grid-container .blog-three {
     background: white;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: -8;
-    grid-column: 9/1;
+    -ms-grid-column: 10;
+    -ms-grid-column-span: -9;
+    grid-column: 10/1;
   }
 }
 .grid-container .blog-three .grid-box-persona {
@@ -463,7 +464,15 @@ background: variables.$primary-color;
 }
 @media screen and (min-width: 992px) {
   .grid-container .blog-five {
+    background: white;
     grid-area: 1/col4-start/last-line/10;
+    background-image: url(/src/img/grey-quote.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right -37px top 35px;
+  }
+  .grid-container .blog-five .header {
+    color: #48556A;
   }
 }
 .grid-container .blog-six {
